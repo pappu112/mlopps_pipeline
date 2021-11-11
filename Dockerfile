@@ -1,5 +1,5 @@
 # lightweight python
-FROM python:3.7-slim
+FROM continuumio/anaconda3
 
 RUN apt-get update
 
