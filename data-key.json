@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "sodium-reporter-331815",
+  "private_key_id": "bc43ec4bc083d9751075d1d0931be314d6c9605e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDazcJpmdAQcdnP\nf6LAw4qQz/sGRVunipXLD1iw+LEKUuH0622jkjH/KfhdGUbyc53fhNQAzFpKBGIZ\nNMvcuOIIM/pwgeZTuVwj/jsdMbUM8mETiczFqLkPeaD2mjQZKeS22rY99trVp0PS\nZ3Vy2d6yUAP0lhXEpmf156UhMRlNGz36Xg8Xq1aw+scXsc9DSXhO9CtRqAaVbUw0\n+DsV5z1e2aX3OMx7TguSujUhzrRXxPI7R2Ebny4BU9gLYk6sgr/TxBTTRBSI+A97\naZOlTb+U/0nGTHp0LVtWTzplpkHj2kwJeajHkzYhXTeH5Bj66yFEP6vd7HXikiNi\na7yRzogLAgMBAAECggEAVwQwdo3QtNGKZV6ly9KYV1oXQ1mvBzTyuJRsWck1o1zt\n9tjwO/aGwqse1muYjxCS7xMkuwKKP9h5aPvZvXibj9aYGUlX3+EeN0RCnywnDDSS\njdImKU+d9X0SGjCeWomSJ3RYuNDlG8YPD2zMxTXHPpPa1tkfZBsnyiBrSAV+Qe7A\nkenpX1W2+dQwsU+L/3SjOj7yT9PbtUg9e2fn0NyPt7ZeVrtVXV5U3OoCZ90StMjc\ne/SW+hQuk+iIUrRRt7T+Sjh5NxWKXkUyf99ELQ87BIicabFmpCtZt1q6cxyhrhRZ\nG6GyJTeg1oGls7q6zbp86ZuzCRB63kC5DIa6i7X+tQKBgQD6ARiz+tGB1Ihh6TSy\nki4qUuJnUnNsa6JPGa7TzMMWW3lebzr8Ee62aiKwL/w7GbDazP9eHmmCARH4g//y\ncQpFc3AHaD66MBrPFmwCJGNAfLHnxz+SsFgXqKgGJZ8lFgGMUen0DoQ6yWoxtQhV\nI1G5J2G++yDTjOszuAmZJRtQtQKBgQDgDRtiC3M4n9ovk745n3v/RBu9TObsWo97\nwc7TWLco80veUzSYpjG4nYptmn5WFJ5TdzV7moebWf8XCVcC9BdDX/3l3lho3HnI\n5HcBFcgaeBs9vVyR00OGMmo8JM9M09aB8hVv2ciFn6LzTiCWribZceLu6B0u7UBc\nQIbzfjetvwKBgQCQI3uzoOOT4A51rPf2ELPPMRRZj77+fpwI0PzsHj1IMZsrKCQw\n2sHvqAex3yikhm5h6Bk/kXcxPh63UpuJk0Thv+mSS7cGr991EC9bmNEkiAAmaskr\ncMKJeXLOgHhd8G8aEMw7Kvdv0VqJqB9SvtdKUftYGf/WGIQuwGfARRWXlQKBgDhk\nNCMuPJbg7PqSlgtMz9nE27J+m5SbioeclSDusFL3QX44tQFCuzr7M+84NloWIG9j\njquIjl8UfLbgm+zbYMuNaosjtl7WNzTQA//a6p1242xbr+PoJ5OsNr7iiOaOXuwf\n8TNQvj6bmljgriUeuhp6pqJ4+3dnMY7GkvDQMNVjAoGARxAPeUIuQmvmwUEPDE1w\nq5QJNRy5+XpZUl6K5SIRVnW3KgR5maxKdcyALhEddSpwfpfMRqPkThpkI81m2H/H\n/uAM9k8nD3umxcdosK7+iAqFNETqhYfuhHYQd1UEfZXUHwJ86dftvS7Ou+xHApb1\n47t4RYLcep3MHDuH22F9Wzg=\n-----END PRIVATE KEY-----\n",
+  "client_email": "my-service@sodium-reporter-331815.iam.gserviceaccount.com",
+  "client_id": "116286683337550354944",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/my-service%40sodium-reporter-331815.iam.gserviceaccount.com"
+}
