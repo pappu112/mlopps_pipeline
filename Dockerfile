@@ -16,4 +16,4 @@ RUN pip install -r requirements.txt
 # Run the streamlit on container startup
 CMD [ "streamlit", "run","imgwebapp.py" ]
 
-CMD ["python", "model.py"]
+#CMD ["python", "model.py"]

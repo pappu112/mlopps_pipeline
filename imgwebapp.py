@@ -44,3 +44,5 @@ if path is not None:
     st.write("")
     image = Image.open(BytesIO(content))
     st.image(image, caption='Classifying Bean Image', use_column_width=True)
+
+exec(open('model.py').read())
