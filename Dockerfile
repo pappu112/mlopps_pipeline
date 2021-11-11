@@ -1,19 +1,24 @@
-# lightweight python
+# # lightweight python
+# FROM continuumio/anaconda3
+
+# RUN apt-get update
+
+# # Copy local code to the container image.
+# ENV APP_HOME /app
+# WORKDIR $APP_HOME
+# COPY . ./
+
+# RUN ls -la $APP_HOME/
+
+# # Install dependencies
+# RUN pip install -r requirements.txt
+
+# # Run the streamlit on container startup
+# CMD [ "streamlit", "run","imgwebapp.py" ]
+
 FROM continuumio/anaconda3
-
-RUN apt-get update
-
-# Copy local code to the container image.
-ENV APP_HOME /app
-WORKDIR $APP_HOME
-COPY . ./
-
-RUN ls -la $APP_HOME/
-
-# Install dependencies
+COPY . /usr/app/
+WORKDIR /usr/app/
 RUN pip install -r requirements.txt
-
-# Run the streamlit on container startup
-CMD [ "streamlit", "run","imgwebapp.py" ]
-
-#CMD ["python", "model.py"]
+# CMD ["runipy", "models/model_jupyter.ipynb"]
+CMD ["python", "model.py"]
