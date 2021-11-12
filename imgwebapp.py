@@ -33,16 +33,17 @@ def decode_img(image):
   img = scale(img)
   return np.expand_dims(img, axis=0)
 
-path = st.text_input('Enter Image URL to Classify.. ','10')
-# if path is not None:
-#     content = requests.get(path).content
+path = st.text_input('Enter duration time ','10')
+if path is not None:
+    exec(open('model.py').read())
+    # content = requests.get(path).content
 
-#     st.write("Predicted Class :")
-#     with st.spinner('classifying.....'):
-#       label =np.argmax(model.predict(decode_img(content)),axis=1)
-#       st.write(classes[label[0]])    
-#     st.write("")
-#     image = Image.open(BytesIO(content))
-#     st.image(image, caption='Classifying Bean Image', use_column_width=True)
-exec(open('model.py').read())
+    # st.write("Predicted Class :")
+    # with st.spinner('classifying.....'):
+    #   label =np.argmax(model.predict(decode_img(content)),axis=1)
+    #   st.write(classes[label[0]])    
+    # st.write("")
+    # image = Image.open(BytesIO(content))
+    # st.image(image, caption='Classifying Bean Image', use_column_width=True)
+
 
