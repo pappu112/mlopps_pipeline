@@ -1,19 +1,10 @@
-apiVersion: apps/v1
-kind: Deployment
+apiVersion: v1
+kind: Pod
 metadata:
   name: mlclass
 spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: mlclassifier
-  template:
-    metadata:
-      labels:
-        app: mlclassifier
-    spec:
-      containers:
-      - name: cv-app
-        image: gcr.io/sodium-reporter-331815/imgwebapp:v8
-        ports:
-        - containerPort: 8503
+  containers:
+  - name: cv-app
+    image: gcr.io/sodium-reporter-331815/imgwebapp:v8
+    ports:
+    - containerPort: 80
