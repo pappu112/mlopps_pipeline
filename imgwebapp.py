@@ -33,7 +33,7 @@ def decode_img(image):
   img = scale(img)
   return np.expand_dims(img, axis=0)
 
-path = st.text_input('Enter Image URL to Classify.. ','http://barmac.com.au/wp-content/uploads/sites/3/2016/01/Angular-Leaf-Spot-Beans1.jpg')
+path = st.text_input('Enter Image URL to Classify.. ','10')
 # if path is not None:
 #     content = requests.get(path).content
 
