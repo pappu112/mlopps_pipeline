@@ -9,40 +9,40 @@ import requests
 from io import BytesIO
 
 st.set_option('deprecation.showfileUploaderEncoding', False)
-st.title("Bean Image Classifier")
-st.text("Provide URL of bean Image for image classification")
+st.title("Python app for run ml midel in schedule")
+st.text("Provide duration in minutes")
 
 @st.cache(allow_output_mutation=True)
 def load_model():
+  exec(open('model.py').read())
   model = tf.keras.models.load_model('/app/models/')
   return model
 
-with st.spinner('Loading Model Into Memory....'):
-  model = load_model()
+# with st.spinner('Loading Model Into Memory....'):
+#   model = load_model()
 
-classes=['angular_leaf_spot','bean_rust','healthy']
+# classes=['angular_leaf_spot','bean_rust','healthy']
 
-def scale(image):
-  image = tf.cast(image, tf.float32)
-  image /= 255.0
+# def scale(image):
+#   image = tf.cast(image, tf.float32)
+#   image /= 255.0
 
-  return tf.image.resize(image,[224,224])
+#   return tf.image.resize(image,[224,224])
 
-def decode_img(image):
-  img = tf.image.decode_jpeg(image, channels=3)
-  img = scale(img)
-  return np.expand_dims(img, axis=0)
+# def decode_img(image):
+#   img = tf.image.decode_jpeg(image, channels=3)
+#   img = scale(img)
+#   return np.expand_dims(img, axis=0)
 
-path = st.text_input('Enter Image URL to Classify.. ','http://barmac.com.au/wp-content/uploads/sites/3/2016/01/Angular-Leaf-Spot-Beans1.jpg')
-if path is not None:
-    content = requests.get(path).content
+# path = st.text_input('Enter Image URL to Classify.. ','http://barmac.com.au/wp-content/uploads/sites/3/2016/01/Angular-Leaf-Spot-Beans1.jpg')
+# if path is not None:
+#     content = requests.get(path).content
 
-    st.write("Predicted Class :")
-    with st.spinner('classifying.....'):
-      label =np.argmax(model.predict(decode_img(content)),axis=1)
-      st.write(classes[label[0]])    
-    st.write("")
-    image = Image.open(BytesIO(content))
-    st.image(image, caption='Classifying Bean Image', use_column_width=True)
+#     st.write("Predicted Class :")
+#     with st.spinner('classifying.....'):
+#       label =np.argmax(model.predict(decode_img(content)),axis=1)
+#       st.write(classes[label[0]])    
+#     st.write("")
+#     image = Image.open(BytesIO(content))
+#     st.image(image, caption='Classifying Bean Image', use_column_width=True)
 
-exec(open('model.py').read())
