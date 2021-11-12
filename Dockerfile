@@ -20,5 +20,5 @@ FROM continuumio/anaconda3
 COPY . /usr/app/
 WORKDIR /usr/app/
 RUN pip install -r requirements.txt
-# CMD ["runipy", "models/model_jupyter.ipynb"]
-CMD ["python", "model.py"]
+CMD ["runipy", "schedule.ipynb"]
+#CMD ["python", "model.py"]

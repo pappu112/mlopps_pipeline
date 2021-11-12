@@ -7,4 +7,8 @@ pandas
 google-cloud-bigquery
 runipy
 
+#for schedule job 
+python-crontab
+schedule
+
 #Run this file with - pip3 install -r requirements.txt

@@ -1,9 +1,9 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/$PROJECT_ID/imgwebapp:v7', '.']
+  args: ['build', '-t', 'gcr.io/$PROJECT_ID/imgwebapp:v8', '.']
   timeout: 180s
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'gcr.io/$PROJECT_ID/imgwebapp:v7']
+  args: ['push', 'gcr.io/$PROJECT_ID/imgwebapp:v8']
 - name: 'gcr.io/cloud-builders/gcloud'
   entrypoint: "bash"
   args:
